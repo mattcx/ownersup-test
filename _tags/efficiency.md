@@ -1,0 +1,4 @@
+---
+title: Efficiency
+slug: efficiency
+---

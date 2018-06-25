@@ -1,0 +1,15 @@
+---
+layout: default
+bodyClasses: interior page
+---
+
+<section class="mod page">
+  <div class="row align-center">
+    <div class="columns large-12">
+      {% if page.title %}
+        <h1 class="page-title">{{ page.title }}</h1>
+      {% endif %}
+      {{ content }}
+    </div>
+  </div>
+</section>

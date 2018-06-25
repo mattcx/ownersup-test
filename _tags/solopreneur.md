@@ -1,0 +1,4 @@
+---
+title: Solopreneur
+slug: solopreneur
+---
