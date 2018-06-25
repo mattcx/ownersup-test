@@ -25,3 +25,5 @@ gems:
 - jekyll-autoprefixer
 - jekyll-redirect-from
 uploads_dir: assets/images
+
+theme: jekyll-theme-slate
