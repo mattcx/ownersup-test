@@ -4,4 +4,14 @@ permalink: "/blog/"
 layout: page
 ---
 
-{% include post-list-by-year.html posts=site.posts %}
+{% assign postsByYear = include.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+{% for year in postsByYear %}
+  <h2>{{ year.name }}</h2>
+  <ul class="post-list">
+    {% for post in year.items %}
+    <li>
+      {% include {{post.layout | prepend:'list-item-' | append:'.html'}} post=post %}
+    </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
